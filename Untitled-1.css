@@ -1,90 +1,85 @@
 header{
+    display: block;
     background: linear-gradient(45deg, palevioletred, rgba(180,40,220,30%), bisque);
+    height: 250px;
+    margin: auto;
 }
 img{
-    border: 8px solid white;
+    position: absolute;
+    width:159px;
+    max-width: 200px;
+    height: 159px;
+    display: inline;
+    margin: auto;
+    border: 1px hidden;
+    padding-top: 3px;
+    padding-left: 3px;
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    position: fixed;
-    float:left;
-    display:inline;
-    background-color: bisque;
-    z-index: 40;
+    z-index: 100;
 }
 div.header{
-    color: azure;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 5rem;
-    font-family: selina;
-    text-transform: capitalize;
+    height: 70px;
+    min-width: 400px;
     display: inline;
-    position: relative;
-    left: 30rem;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    float: right;
+    padding-top: 134px;
+    padding-right: 188px;
+    padding-bottom: 0;
+    padding-left: 3px;
+    margin: auto;
 }
 form{
     display: inline;
+    margin: auto;
     float: right;
-    position: relative;
-    right: 5rem;
-    top: 1rem;
-    z-index: 20;
+    height: 30px;
 }
-input[type="text"]{
-    color: black;
-    letter-spacing: 1px;
-    border: 1px solid;
-    border-radius: 0.8rem;
-    height: 2rem;
-    width: S8rem;
-    height: 2rem;
+input[placeholder="search"]{
+    height: 30px;
     background-image: url("../fontawesome/fontawesome.com_icons_magnifying-glass_s=solid2.png");
-    background-position: 6px 19px;
+    background-position: 6px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 4px 15px 4px 30px;
+    border: 1px hidden;
+    border-radius: 7px;
+    margin-top: 3px;
+    margin-right: 3px;
+
 }
 nav{
-    position: relative;
-    background: linear-gradient(45deg, palevioletred, rgba(180,40,220,30%), bisque);
-    height: 8rem;
     display: flex;
     justify-content: center;
+    min-width: 200px;
+    min-height: 50px;
+    background: linear-gradient(30deg, palevioletred, rgba(180,40,220,30%), bisque);
 }
-a{
-    color: rgb(66, 23, 66);
-    font-weight: 700;
-    font-size: larger;
+a:link{
+    color:black;
+    text-decoration: none;
+    letter-spacing: 1pt;
+    word-spacing: 2pt;
+    font-weight: bolder;
+    font-size: 20px;
 }
-a.prod{
-    position: relative;
-    right: -5.4rem;
-    top: 6rem;
-    padding: 0 5.76rem 0 5.76rem;
-    margin: 0 auto 0 auto;
-    height: 2rem;
+a:visited{
+    color: rgba(209, 94, 117, 0.5);
 }
-a.join{
-    position: relative;
-    right: -5.4rem;
-    top: 6rem;
-    padding: 0 5.76rem 0 5.76rem;
-    margin: 0 auto 0 auto;
-    height: 2rem;
+a:hover{
+    color: indianred;
 }
 a.log{
-    position: relative;
-    right: -5.4rem;
-    top: 6rem;
-    padding: 0 5.76rem 0 5.76rem;
-    margin: 0 auto 0 auto;
-    height: 2rem;
+    float: right;
+    margin: auto;
 }
 a[target="_blank"]{
-    position: relative;
-    right: -5.4rem;
-    top: 6rem;
-    padding: 0 5.76rem 0 5.76rem;
-    margin: 0 auto 0 auto;
-    height: 2rem;
+    float: right;
+    margin: auto;
+}
+a.prod{
+    float: left;margin: auto;
+}
+a.join{margin: auto;
 }
