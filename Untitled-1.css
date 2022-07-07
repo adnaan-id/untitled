@@ -1,0 +1,90 @@
+header{
+    background: linear-gradient(45deg, palevioletred, rgba(180,40,220,30%), bisque);
+}
+img{
+    border: 8px solid white;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    position: fixed;
+    float:left;
+    display:inline;
+    background-color: bisque;
+    z-index: 40;
+}
+div.header{
+    color: azure;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5rem;
+    font-family: selina;
+    text-transform: capitalize;
+    display: inline;
+    position: relative;
+    left: 30rem;
+}
+form{
+    display: inline;
+    float: right;
+    position: relative;
+    right: 5rem;
+    top: 1rem;
+    z-index: 20;
+}
+input[type="text"]{
+    color: black;
+    letter-spacing: 1px;
+    border: 1px solid;
+    border-radius: 0.8rem;
+    height: 2rem;
+    width: S8rem;
+    height: 2rem;
+    background-image: url("../fontawesome/fontawesome.com_icons_magnifying-glass_s=solid2.png");
+    background-position: 6px 19px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+nav{
+    position: relative;
+    background: linear-gradient(45deg, palevioletred, rgba(180,40,220,30%), bisque);
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: rgb(66, 23, 66);
+    font-weight: 700;
+    font-size: larger;
+}
+a.prod{
+    position: relative;
+    right: -5.4rem;
+    top: 6rem;
+    padding: 0 5.76rem 0 5.76rem;
+    margin: 0 auto 0 auto;
+    height: 2rem;
+}
+a.join{
+    position: relative;
+    right: -5.4rem;
+    top: 6rem;
+    padding: 0 5.76rem 0 5.76rem;
+    margin: 0 auto 0 auto;
+    height: 2rem;
+}
+a.log{
+    position: relative;
+    right: -5.4rem;
+    top: 6rem;
+    padding: 0 5.76rem 0 5.76rem;
+    margin: 0 auto 0 auto;
+    height: 2rem;
+}
+a[target="_blank"]{
+    position: relative;
+    right: -5.4rem;
+    top: 6rem;
+    padding: 0 5.76rem 0 5.76rem;
+    margin: 0 auto 0 auto;
+    height: 2rem;
+}
