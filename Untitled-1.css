@@ -1,14 +1,25 @@
+html{
+    font-size: 16px;
+    width: 100%;
+}
+
+
+
+
+
+
+/* header part */
 header{
     display: block;
     background: linear-gradient(45deg, palevioletred, rgba(180,40,220,30%), bisque);
-    height: 250px;
+    height: calc(100vh - 75vh);
     margin: auto;
+    position: sticky;
 }
 img{
     position: absolute;
-    width:159px;
-    max-width: 200px;
-    height: 159px;
+    width: max(10%, 12vw);
+    height: max(10%, 15vh);
     display: inline;
     margin: auto;
     border: 1px hidden;
@@ -18,18 +29,21 @@ img{
     z-index: 100;
 }
 div.header{
-    height: 70px;
-    min-width: 400px;
-    display: inline;
-    font-size: 4rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-transform: capitalize;
-    float: right;
-    padding-top: 134px;
-    padding-right: 188px;
-    padding-bottom: 0;
-    padding-left: 3px;
     margin: auto;
+    height: 11.6vh;
+    width: calc(100vw - 50vw);
+    display: inline;
+    float: right;
+    color: white;
+    font-size: clamp(1pt, 6vw, 9vw);
+    font-style: italic;
+    font-family:'Bodoni MT', sans-serif;
+    word-spacing: 1pt;
+    text-transform: capitalize;
+    padding-top: calc(100vh - 95vh);
+    padding-right: calc(100vw - 75vw );
+    padding-left: min(calc(100vw - 80vw), 30%);
+    overflow: hidden;
 }
 form{
     display: inline;
@@ -39,6 +53,7 @@ form{
 }
 input[placeholder="search"]{
     height: 30px;
+    width: max(15%, 116px);
     background-image: url("../fontawesome/fontawesome.com_icons_magnifying-glass_s=solid2.png");
     background-position: 6px 10px;
     background-repeat: no-repeat;
@@ -47,8 +62,17 @@ input[placeholder="search"]{
     border-radius: 7px;
     margin-top: 3px;
     margin-right: 3px;
+    float: right;
 
 }
+
+
+
+
+
+
+
+/* styling the nav */
 nav{
     display: flex;
     justify-content: center;
@@ -63,12 +87,16 @@ a:link{
     word-spacing: 2pt;
     font-weight: bolder;
     font-size: 20px;
+    margin-right: 48px;
+    margin-left: 48px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 a:visited{
     color: rgba(209, 94, 117, 0.5);
 }
 a:hover{
-    color: indianred;
+    color: rgb(46, 9, 51);
 }
 a.log{
     float: right;
@@ -82,4 +110,55 @@ a.prod{
     float: left;margin: auto;
 }
 a.join{margin: auto;
+}
+
+
+
+
+
+
+
+/* the side */
+aside{
+    width: calc(100vw - 75vw);
+    height: auto;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+    float: right;
+    background-color: rgb(245, 206, 245);
+}
+h3{
+    font-weight: 200;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: 'Gloucester MT', sans-serif;
+}
+hr{
+    margin-top: 0px;
+    margin-bottom: 0;
+    width: 75%;
+}
+section{
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: monospace sans-serif;
+    font-weight: lighter;
+}
+img[alt~="linkedIn"]{
+    max-width: 30px;
+}
+
+
+
+
+
+
+/* main body */
+article{
+    width: max(calc(125vw - 65vw), 50%);
+    float: left;
 }
